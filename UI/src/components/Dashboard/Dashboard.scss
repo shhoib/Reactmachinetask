@@ -3,16 +3,38 @@
 
 .dashboard{
     width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include mobile{
+        width: 100%;
+    }
+    @include small{
+        width: 100%;
+    }
 
     header{
         display: flex;
         justify-content: space-between;
+        width: 100%;
 
         h5{
             margin-top: 3rem;
             margin-left: 3rem;
             font-size: 1.2rem;
             color: rgb(36, 35, 35);
+
+            @include mobile{
+                margin-top: 2rem;
+                margin-left: 1.5rem;
+                font-size: 1rem;
+            }
+            @include small{
+                margin-top: 1.5rem;
+                margin-left: 1rem;
+                font-size: .7rem;
+            }
         }
 
         .profile{
@@ -23,15 +45,44 @@
             box-shadow: 5px 2px 5px #888888;
             margin: 1.2rem 3rem;
 
+            @include mobile{
+                padding: 0.6rem .8rem;
+                margin: 1rem 2rem;
+            }
+            @include small{
+                padding: 0.5rem .7rem;
+                margin: 1rem ;
+            }
+
             h6{
                 font-size: 1rem;
                 margin-bottom: 0.2rem;
+
+                @include mobile{
+                    font-size: 0.8rem;
+                }
+                @include small{
+                    font-size: 0.6rem;
+                    margin-bottom: 0.1rem;
+                }
             }
             p{
                 font-size: 0.7rem;
+
+                @include mobile{
+                    font-size: 0.6rem;
+                }
+                @include small{
+                    font-size: 0.5rem;
+                }
             }
             img{
                 margin-left: 0.7rem;
+
+                @include small{
+                    height: 25px;
+                    margin-left: 0.3rem;
+                }
             }
         }
     }

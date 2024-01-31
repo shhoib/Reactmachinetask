@@ -1,0 +1,108 @@
+@import '../../App.scss';
+
+
+.tableContainer{
+
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 90%;
+
+    @include mobile{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    @include small{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    @include tablet{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+  table {
+    width: 82%;
+    border-collapse: collapse;
+    margin-top: 3rem;
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px #a3a2a2;
+    background-color: white;
+  
+    @include mobile{
+      width: 90%;
+    }
+    @include small{
+      width: 90%;
+    }
+    @include tablet{
+      width: 85%;
+      margin-top: 2rem;
+    }
+  
+  th,  td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  
+   th {
+    color: rgb(41, 40, 40);
+    padding: .8rem;
+  }
+  tr:nth-child(even){
+    background-color: #ebebeb ;
+  }
+   tr:hover {
+    background-color: #b1afaf;
+    cursor: pointer;
+    transition: 1s;
+  }
+  }
+
+  .profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 5px 5px #a3a2a2;
+    width: 18%;
+    margin-top: 3rem;
+    background-color: white;
+
+    @include mobile{
+      width: 80%;
+      margin-top: 1rem;
+    }
+    @include small{
+      width: 80%;
+      margin-top: .7rem;
+    }
+    @include tablet{
+      width: 60%;
+      margin-top: .7rem;
+    }
+
+    h6{
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+    p{
+        font-weight: 100;
+        margin-top: 1rem;
+    }
+
+    .profileIMG{
+        width: 100%;
+    }
+    .icons{
+        img{
+            width: 20px;
+            margin: .6rem;
+        }
+    }
+  }
+}

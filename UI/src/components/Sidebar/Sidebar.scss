@@ -9,6 +9,19 @@ aside{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    left: 0;
+    top: 0;
+
+    @include mobile{
+        display: none;
+    }
+    @include small{
+        display: none;
+    }
+    @include tablet{
+        width: 30%;
+    }
 
     .chartHeader{
         display: flex;
@@ -16,6 +29,10 @@ aside{
         align-items: center;
         justify-content: center;
         margin-top: 1rem;
+
+        @include tablet{
+            margin-top: 3rem;
+        }
 
         img{
             width: 70px;
