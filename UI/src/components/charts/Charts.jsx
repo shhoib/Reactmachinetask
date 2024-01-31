@@ -76,7 +76,7 @@ const Charts = () => {
         <Line
             options={lineOptions}
             data={lineData}
-            />
+            ></Line>
        </div>
 
        <div className="pieChart">

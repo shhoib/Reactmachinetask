@@ -21,7 +21,7 @@
 
     .lineChart{
 
-        width: 75%;
+        width: 70%;
         background-color: white;
         border-radius: 10px;
         padding: .7rem;
@@ -44,10 +44,10 @@
 .pieChart{
     background-color: white;
     border-radius: 10px;
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 2.5rem;
     box-shadow: 2px 5px 5px #a3a2a2;
-    margin-left: 2rem;
-    width: 25%;
+    // margin-left: 2rem;
+    width: 27%;
 
     @include mobile{
         margin-top: 2rem;

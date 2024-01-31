@@ -7,6 +7,7 @@
     justify-content: space-between;
     gap: 20px;
     width: 90%;
+    margin-bottom: 3rem;
 
     @include mobile{
       flex-direction: column;
@@ -24,22 +25,30 @@
       align-items: center;
     }
 
+ .withPagination{
+
+   width: 82%;
+
+   @include mobile{
+    width: 90%;
+  }
+  @include small{
+    width: 90%;
+  }
+  @include tablet{
+    width: 85%;
+  }
+
   table {
-    width: 82%;
+    width: 100%;
     border-collapse: collapse;
     margin-top: 3rem;
     border-radius: 10px;
     box-shadow: 2px 5px 5px #a3a2a2;
     background-color: white;
   
-    @include mobile{
-      width: 90%;
-    }
-    @include small{
-      width: 90%;
-    }
+  
     @include tablet{
-      width: 85%;
       margin-top: 2rem;
     }
   
@@ -63,6 +72,56 @@
   }
   }
 
+  .pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button{
+      background: transparent;
+      border: none;
+      display: flex;
+      align-items: center;
+      box-shadow: 2px 5px 5px #a3a2a2;
+      border-radius: 10px;
+      margin: 1rem;
+      padding: 0.7rem;
+
+      @include mobile{
+        margin: 0.6rem;
+        padding: 0.5rem;
+      }
+      @include small{
+        margin: 0.6rem;
+        padding: 0.5rem;
+      }
+    }
+    button:hover{
+      cursor: pointer;
+    }
+    p{
+      padding: 0.5rem;
+      background-color: rgb(213, 244, 255);
+      border-radius: 10px;
+      margin: 0.3rem;
+      color: rgb(53, 52, 52);
+
+      p:hover{
+        cursor: pointer;
+      }
+    }
+    .active{
+      p{
+        background-color: rgb(117, 204, 238);
+        color: white;
+        box-shadow: 2px 5px 5px #a3a2a2;
+
+      }
+    }
+  }
+
+  }
+
   .profile{
     display: flex;
     flex-direction: column;
@@ -72,6 +131,7 @@
     width: 18%;
     margin-top: 3rem;
     background-color: white;
+    border-radius: 10px;
 
     @include mobile{
       width: 80%;
