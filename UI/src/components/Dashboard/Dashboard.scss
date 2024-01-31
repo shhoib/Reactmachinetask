@@ -1,0 +1,38 @@
+@import '../../App.scss';
+
+
+.dashboard{
+    width: 85%;
+
+    header{
+        display: flex;
+        justify-content: space-between;
+
+        h5{
+            margin-top: 3rem;
+            margin-left: 3rem;
+            font-size: 1.2rem;
+            color: rgb(36, 35, 35);
+        }
+
+        .profile{
+            display: flex;
+            padding: .8rem 1rem;
+            background-color: var(--primary-color);
+            border-radius: 10px;
+            box-shadow: 5px 2px 5px #888888;
+            margin: 1.2rem 3rem;
+
+            h6{
+                font-size: 1rem;
+                margin-bottom: 0.2rem;
+            }
+            p{
+                font-size: 0.7rem;
+            }
+            img{
+                margin-left: 0.7rem;
+            }
+        }
+    }
+}
