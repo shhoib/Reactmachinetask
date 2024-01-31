@@ -1,3 +1,4 @@
+import Table from '../Table/Table';
 import Charts from '../charts/Charts';
 import './Dashboard.scss';
 
@@ -18,6 +19,7 @@ const Dashboard = () => {
      </header>
 
      <Charts/>
+     <Table/>
     </div>
   )
 }

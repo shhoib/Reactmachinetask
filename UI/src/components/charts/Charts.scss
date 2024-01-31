@@ -1,0 +1,49 @@
+@import '../../App.scss';
+
+
+.charts{
+    display: flex;
+    justify-content: center;
+
+    .lineChart{
+
+        width: 60%;
+        background-color: white;
+        border-radius: 10px;
+        padding: .7rem;
+        box-shadow: 2px 5px 5px #a3a2a2;
+        // min-height: 200px;
+        
+    }
+    
+.pieChart{
+    // width: 45%;
+    // height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem 3.5rem;
+    box-shadow: 2px 5px 5px #a3a2a2;
+    margin-left: 3rem;
+
+
+    .circle{
+        width: 150px;
+    }
+    .colorsDetails{
+        display: flex;
+        margin-top: 1rem;
+
+        .color{
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            margin-right: 0.7rem;
+            margin-top: .5rem;
+        }
+        p{
+            margin-top: .3rem;
+            color: rgb(34, 34, 34);
+        }
+    }
+}
+}
