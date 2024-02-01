@@ -1,12 +1,16 @@
-import { useState } from 'react';
+import { useContext } from 'react';
 import Table from '../Table/Table';
 import Charts from '../charts/Charts';
 import './Dashboard.scss';
 import { CgMenuLeftAlt } from "react-icons/cg";
-import Sidebar from '../../components/Sidebar/Sidebar';
+import {context} from '../../store/context'
+import { IoMdClose } from "react-icons/io";
 
 const Dashboard = () => {
-  const [isMenuOpened, setIsMenuOpened] = useState(false);
+
+  const {isMenuOpened,setIsMenuOpened} = useContext(context);
+
+  // console.log(isMenuOpened);
 
   const handleMenu = () => {
     setIsMenuOpened(!isMenuOpened);
@@ -17,7 +21,7 @@ const Dashboard = () => {
       <header>
         <h5>Good Morning ! 🌞</h5>
         <p className='menuIcon' onClick={handleMenu}>
-          <CgMenuLeftAlt />
+         {isMenuOpened ? <IoMdClose className='closeMenu'/>: <CgMenuLeftAlt /> }
         </p>
         <div className="profile">
           <div className="emails">
@@ -30,7 +34,6 @@ const Dashboard = () => {
 
       <Charts />
       <Table />
-      {/* <Sidebar isMenuOpened={isMenuOpened} /> */}
     </div>
   );
 };

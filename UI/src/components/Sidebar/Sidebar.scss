@@ -15,10 +15,25 @@ aside{
 
     @include mobile{
         display: none;
-        
+    &.openMenu {
+      display: flex;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 50%;
+      animation: menu 1s;
+    }     
     }
     @include small{
         display: none;
+
+      &.openMenu {
+            display: flex;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 50%;
+          }
     }
     @include tablet{
         width: 30%;
@@ -55,6 +70,11 @@ aside{
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
 
+        &.mobileLI{
+            padding: 0.7rem 1rem;
+            margin-bottom: 1rem;
+        }
+
         p{
             margin-left: .5rem;
         }
@@ -77,6 +97,15 @@ aside{
         padding: 1rem 0;
         color: red;
         gap: 5px;
+    }
+}
+
+@keyframes menu {
+    from{
+        transform: translateX(-50px);
+    }
+    to{
+        transform: translateX(0px);
     }
 }
 

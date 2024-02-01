@@ -1,7 +1,12 @@
+import { useContext } from 'react';
+import { context } from '../../store/context';
 import './Sidebar.scss';
 
 
-const Sidebar = ({ isMenuOpened }) => {
+const Sidebar = () => {
+
+    const {isMenuOpened} = useContext(context);
+    console.log(isMenuOpened);
 
     const liData = [
         {
@@ -25,7 +30,6 @@ const Sidebar = ({ isMenuOpened }) => {
             index : 4
         },
     ]
-    console.log(isMenuOpened);
   return (
     <aside className={`${isMenuOpened? 'openMenu' : ''}`}>
         <div className="chartHeader">
@@ -35,7 +39,7 @@ const Sidebar = ({ isMenuOpened }) => {
 
         <div className="LIs">
             { liData.map((li)=>(
-                <div className="li" key={li.index}>
+                <div className={`li ${isMenuOpened? 'mobileLI' : ''}`} key={li.index}>
                     <img src={li.img} alt="" />
                     <p>{li.text}</p>
                 </div>
