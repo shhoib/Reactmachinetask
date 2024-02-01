@@ -19,6 +19,21 @@
         justify-content: space-between;
         width: 100%;
 
+        .menuIcon{
+            display: none;
+            position: absolute;
+            top: 1.2rem;
+            left: 1.5rem;
+
+
+            @include mobile{
+                display: flex;
+            }
+            @include small{
+                display: flex;
+            }
+        }
+
         h5{
             margin-top: 3rem;
             margin-left: 3rem;
@@ -26,12 +41,12 @@
             color: rgb(36, 35, 35);
 
             @include mobile{
-                margin-top: 2rem;
+                margin-top: 2.5rem;
                 margin-left: 1.5rem;
                 font-size: 1rem;
             }
             @include small{
-                margin-top: 1.5rem;
+                margin-top: 1.8rem;
                 margin-left: 1rem;
                 font-size: .7rem;
             }

@@ -15,6 +15,7 @@ aside{
 
     @include mobile{
         display: none;
+        
     }
     @include small{
         display: none;
@@ -78,3 +79,4 @@ aside{
         gap: 5px;
     }
 }
+

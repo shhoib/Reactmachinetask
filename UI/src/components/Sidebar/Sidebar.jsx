@@ -1,7 +1,7 @@
 import './Sidebar.scss';
 
 
-const Sidebar = () => {
+const Sidebar = ({ isMenuOpened }) => {
 
     const liData = [
         {
@@ -25,8 +25,9 @@ const Sidebar = () => {
             index : 4
         },
     ]
+    console.log(isMenuOpened);
   return (
-    <aside>
+    <aside className={`${isMenuOpened? 'openMenu' : ''}`}>
         <div className="chartHeader">
             <img src="/img/Briefcase.png" alt="" loading='lazy'/>
             <img className='statsIMG' src="/img/StatBoard.png" alt="" loading='lazy'/>

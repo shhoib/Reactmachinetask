@@ -51,6 +51,12 @@
     @include tablet{
       margin-top: 2rem;
     }
+    @include mobile{
+      margin-top: 2rem;
+    }
+    @include small{
+      margin-top: 2rem;
+    }
   
   th,  td {
     border: 1px solid #ddd;
